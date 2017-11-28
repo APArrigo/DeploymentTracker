@@ -1,0 +1,18 @@
+<div>
+  <div id="fullOfDetail" class="double" *ngIf="selectedDeployment">
+    Server: {{selectedDeployment.serverName}} <br/>
+    Application: {{selectedDeployment.appName}} <br/>
+    Version: {{selectedDeployment.version}} <br/>
+    Build: {{selectedDeployment.build}} <br/>
+    Db Date: {{selectedDeployment.dbVersion}} <br/>
+    Deployed On: {{selectedDeployment.deploymentDate}} <br/>
+    Deployed By: {{selectedDeployment.deployer}} <br/>
+    <div class="left-button" >
+        <input type="image" src="/assets/images/edit.png" 
+            class="button-image"
+            (click)="handleEditClick(selectedDeployment)"
+            alt="Reset" width="48" height="48" >
+    </div>  
+  </div>
+</div>
+

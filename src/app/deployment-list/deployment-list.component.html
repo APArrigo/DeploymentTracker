@@ -1,0 +1,39 @@
+
+<div id="containerDiv">
+  <div id="selectedDeployment">
+    <deployment-detail [selectedDeployment]="selectedDeployment">Hello</deployment-detail>
+  </div>
+
+  <div id="aroundBottom">
+    <div id="aroundButtons">
+        <div class="left-button" >
+            <input type="image" src="/assets/images/reset_button.jpg"
+                class="button-image"
+                (click)="handleClearClick(deployment)"
+                alt="Reset" width="48" height="48" >
+        </div>
+        <div class="left-button" >
+            <input type="image" src="/assets/images/edit.png" 
+                class="button-image"
+                (click)="handleEditClick(deployment)"
+                alt="Reset" width="48" height="48" >
+        </div>
+      </div>
+    
+  
+    <div id="aroundDeployments">
+      <div id="aroundDeploymentButtons">
+        <button class="{{getSelectionClass(deployment._id)}} deploymentButton" 
+          *ngFor="let deployment of deployments"
+          (click)="handleSelectionMade(deployment)"
+        >
+          {{deployment.serverName}} <br/>
+          {{deployment.appName}} <br/>
+          {{deployment.version}} <br/>
+          {{deployment.deployedBy}} <br/>
+          
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

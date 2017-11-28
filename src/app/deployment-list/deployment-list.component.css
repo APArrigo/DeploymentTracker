@@ -1,0 +1,81 @@
+input.button-image {
+    padding:5px 5px 5px 30px; 
+ }
+
+ button.deploymentButton {
+    display: table-cell;
+    height:100px;
+ }
+
+ button.selectedButton {
+    border-style: solid;    
+    background-color: rgb(212, 230, 230); /* Green */
+    color: normal;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    float: left;
+}
+
+button.unselectedButton {
+    border-style: solid;    
+    background-color: rgb(230, 212, 216); /* Green */
+    color: normal;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    float: left;
+}
+
+input.left-button {
+    background-image:url('/assets/images/reset_button.jpg');
+    float:left;
+    width:100%;
+}
+
+div.left-button {
+    float: left;
+}
+
+div#containerDiv {
+    float:left;
+    width:100%;
+    overflow:hidden;
+    position:relative;    
+}
+
+div#aroundBottom {
+    border-style: solid;    
+    float:left;
+    width:100%;
+}
+
+div#selectedDeployment {
+    float:left;
+    width:100%;    
+}
+
+
+div#aroundDeployments {
+    float:left;
+    width:85%;
+    position:relative;
+}
+
+div#aroundDeploymentButtons {
+    display: table;
+    table-layout: fixed;
+
+    width:90%;
+    height:100px;
+}
+
+div#aroundButtons {
+    float:left;
+    width:15%;
+    position:relative;
+}
